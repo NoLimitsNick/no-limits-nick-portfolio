@@ -1,21 +1,28 @@
+#TODO Make Object Retrieval Dynamic 
+
+# Import Libraries
 import boto3
 import io
 import zipfile
 import mimetypes
 
+# S3 from boto3 AWS SDK
 s3 = boto3.resource('s3')
 
-portfolio_bucket = s3.Bucket('portfolio.nolimitsnick.com')
+# Get Target Bucket and BuildBucket
+target_buccket = s3.Bucket('portfolio.nolimitsnick.com')
 build_bucket = s3.Bucket('portfoliobuild.nolimitsnick.com')
 
-portfolio_zip = io.BytesIO()
-build_bucket.download_fileobj('portfoliobuild.zip', portfolio_zip)
+# Buffer Stream to String and Download 
+target_zip = io.BytesIO()
+build_bucket.download_fileobj('portfoliobuild.zip', target_zip)
 
-with zipfile.ZipFile(portfolio_zip) as myzip:
+# Unzip file, upload, and update ACL with Public Read
+with zipfile.ZipFile(target_zip) as myzip:
 	for item in myzip.namelist():
 		obj = myzip.open(item)
-		portfolio_bucket.upload_fileobj(obj, item, ExtraArgs={'ContentType': mimetypes.guess_type(item)[0]})
-		portfolio_bucket.Object(item).Acl().put(ACL='public-read')
+		target_buccket.upload_fileobj(obj, item, ExtraArgs={'ContentType': mimetypes.guess_type(item)[0]})
+		target_buccket.Object(item).Acl().put(ACL='public-read')
 		
 
 
