@@ -10,5 +10,6 @@ artifacts:
   files:
     - index.html
     - favicon.ico
+    - NicolasHunter-Resume.pdf
     - styles/main.css
     - images/*
