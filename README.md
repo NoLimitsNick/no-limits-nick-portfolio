@@ -19,3 +19,6 @@ ssh -keygen -C <email_address>
 ls ~/.ssh
 cat id_rsa.pub
 ssh-add
+
+Created deployS3Website Lambda function to S3.
+Role granted is deployS3WebsiteRole
