@@ -3,8 +3,7 @@ NLN The Dev
 Portfolio designed using AWS and ReactJS.
 
 AWS Services Used:
-IAM
-
+IAM		S3		CodeBuild
 JS Frameworks Used:
 
 
