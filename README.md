@@ -10,6 +10,7 @@ JS Frameworks Used:
 Technologies Used:
 Brew	Git/GitHub	SSH
 HTML/CSS	Font Awwesome	Google Fonts
+Babel
 Python 3.7 and Python 3.6.4 PyEnv for Multiple Versions
 pyenv install 3.6.4	pyenv global 3.6.4
 
@@ -22,3 +23,11 @@ ssh-add
 
 Created deployS3Website Lambda function to S3.
 Role granted is deployS3WebsiteRole
+
+Created SNS Notification deployS3PortfolioTopic 
+aws sns publish --topic-arn arn:aws:sns:us-east-1:813570147528:deployS3PortfolioTopic --subject "Test message" --message "This is a test message"
+
+Created Custom IAM Policy SNSPublishTo-deployPortfolioTopic 
+
+CodePipeline Automation
+Add Lambda as custom action to CodePipeline(Not natively supported as deployment)
