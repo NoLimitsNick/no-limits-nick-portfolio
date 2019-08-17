@@ -44,3 +44,5 @@ npm install --save-dev babel-jest@22.4.3 enzyme@3.3.0 jest@22.4.3 babel-preset-e
 React Testing
 Created .babelrc file
 Tells babel what to run outside of webpack
+Added npm test to buildspec.yml
+If test cases fail. Build will fail too.
