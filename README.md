@@ -10,7 +10,7 @@ JS Frameworks Used:
 Technologies Used:
 Brew	Git/GitHub	SSH
 HTML/CSS	Font Awwesome	Google Fonts
-Babel
+Babel		React			Chai/Mocha
 Python 3.7 and Python 3.6.4 PyEnv for Multiple Versions
 pyenv install 3.6.4	pyenv global 3.6.4
 
