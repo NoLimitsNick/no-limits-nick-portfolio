@@ -11,6 +11,7 @@ Technologies Used:
 Brew	Git/GitHub	SSH
 HTML/CSS	Font Awwesome	Google Fonts
 Babel		React			Chai/Mocha
+Jest/Enzyme(React-Test)
 Python 3.7 and Python 3.6.4 PyEnv for Multiple Versions
 pyenv install 3.6.4	pyenv global 3.6.4
 
@@ -38,3 +39,8 @@ npm install --save react@16.2.0 react-dom@16.2.0
 save-dev (Needed for development)
 npm install --save-dev webpack@4.2.0 webpack-cli@2.0.13
 npm install --save-dev babel-core@6.26.0 babel-loader@7.1.4 babel-preset-react@6.24.1
+npm install --save-dev babel-jest@22.4.3 enzyme@3.3.0 jest@22.4.3 babel-preset-env@1.6.1 enzyme-adapter-react-16@1.1.1 react-test-renderer@16.2.0
+
+React Testing
+Created .babelrc file
+Tells babel what to run outside of webpack

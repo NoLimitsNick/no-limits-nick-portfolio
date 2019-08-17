@@ -26,6 +26,6 @@ const myWork = [
 			'src' : "images/sqlwebform_example3.png",
 			'comment' : `Third Project`
 		}
-	},
+	}
 ]
 ReactDOM.render(<ExampleWork work = {myWork}/>, document.getElementById('example-work'));
