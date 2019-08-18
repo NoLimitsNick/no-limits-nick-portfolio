@@ -5,6 +5,8 @@ import ExampleWork from './example-work'
 const myWork = [
 	{
 		'title' : "Serverless Portfolio",
+		'href' : "https://example.com",
+		'desc' : "My Serverless Portoflio with CICD",
 		'image' : {
 			'desc': "example screenshot of a project involving code",
 			'src' : "images/portfolio_example1.png",
@@ -13,6 +15,8 @@ const myWork = [
 	},
 	{
 		'title' : "Senior Design RFID Inventory Microservices",
+		'href' : "https://example.com",
+		'desc' : "Computer Engineering Final Project",
 		'image' : {
 			'desc': "Senior Design Project Architecture",
 			'src' : "images/seniordesign_example2.png",
@@ -21,6 +25,8 @@ const myWork = [
 	},
 	{
 		'title' : "Pi Embedded SQLite Express API ",
+		'href' : "https://example.com",
+		'desc' : "Introduction to IoT Security",
 		'image' : {
 			'desc' : "Express API written for Embedded PI SQLite",
 			'src' : "images/sqlwebform_example3.png",
