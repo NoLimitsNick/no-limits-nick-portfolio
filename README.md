@@ -46,3 +46,6 @@ Created .babelrc file
 Tells babel what to run outside of webpack
 Added npm test to buildspec.yml
 If test cases fail. Build will fail too.
+
+Changed CloudFront Default TTL to 86400(1 Day)
+Set CW alarm to send notifcation if errors show on our portfolio.
